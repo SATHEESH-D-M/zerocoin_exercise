@@ -513,13 +513,6 @@ def download_save_display(
             plt.savefig(comp_path, dpi=150, bbox_inches="tight")
             logging.info(f"Saved comparison to {comp_path}")
 
-            # save the comparison figure
-            plt.savefig(
-                output_path,
-                dpi=150,
-                bbox_inches="tight",
-            )
-
             plt.close(fig)  # Close the figure to free memory
         except Exception as e:
             logging.warning(f"Image display failed: {e}")
