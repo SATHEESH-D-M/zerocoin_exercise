@@ -99,3 +99,4 @@ __kernel void tone_map_logarithmic(__read_only  image2d_t input_image,
 
     write_imagef(output_image, coord, out_pixel);
 }
+
