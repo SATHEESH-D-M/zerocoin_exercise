@@ -1,3 +1,17 @@
+"""This script contains utility functions for OpenCL image processing,
+functions include:
+1. setup_logging
+2. load_image
+3. setup_opencl
+4. opencl_image_format
+5. upload_image_to_gpu
+6. gpu_buffer
+7. build_program
+8. execute_kernels_dynamic
+9. download_save
+and handles cleanup with error handling.
+"""
+
 import pyopencl as cl
 import numpy as np
 from PIL import Image
@@ -432,7 +446,7 @@ def execute_kernels_dynamic(
     return [buffers[-1]] + buffers[1:-1] + [buffers[0]]
 
 
-def download_save_display(
+def download_save(
     queue: cl.CommandQueue,
     final_image: cl.Image,
     img_np: np.ndarray,
