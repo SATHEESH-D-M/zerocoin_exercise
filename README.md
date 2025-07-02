@@ -87,5 +87,5 @@ python src/pipeline.py --input "data/sample.png" --output "data/output.png" --mL
 - ```./src/utils.py``` has all the reusable modular code.
 - ```./src/pipeline.py``` makes use of ```./src/utils.py``` and is pipeline specific (not reusable).
 - ```./jupyter_nbooks``` contains the trial and error .ipynb files.
-- 
+
 
