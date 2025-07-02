@@ -1,3 +1,10 @@
+"""
+This module implements a complete OpenCL image processing pipeline
+non reusable code specific for this pipeline.
+functions include:
+- process_image
+"""
+
 from utils import *
 import argparse
 import logging
@@ -54,7 +61,7 @@ def process_image(
         final_image = image_buffers[0]
 
         # 7. Download, save, and display results
-        result_np = download_save_display(
+        result_np = download_save(
             queue=queue,
             final_image=final_image,
             img_np=img_np,
@@ -90,12 +97,18 @@ if __name__ == "__main__":
             help="Path for output image (default: data/output.png)",
             default="data/output.png",
         )
+        parser.add_argument(
+            "--mLuminance",
+            type=float,
+            help="max luminance for tone mapping (default: 5.0)",
+            default=0.5,
+        )
         args = parser.parse_args()
 
         logger.info(f"Processing image: {args.input}")
 
         # Call your processing function
-        process_image(args.input, args.output, 0.9)
+        process_image(args.input, args.output, args.mLuminance)
 
     except Exception as e:
         logger.exception("An error occurred during processing.")
