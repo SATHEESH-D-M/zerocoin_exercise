@@ -1,0 +1,14 @@
+865617a | SATHEESH-D-M | 2025-07-02 | report added
+38a5b96 | SATHEESH-D-M | 2025-07-02 | added summary
+a3e5705 | SATHEESH-D-M | 2025-07-02 | added -mLuninance arg
+624ed5c | SATHEESH-D-M | 2025-07-02 | env files added
+a2742db | SATHEESH-D-M | 2025-07-02 | updated README.md
+c9cb8cf | SATHEESH-D-M | 2025-07-02 | output save options changed
+6f68cb1 | SATHEESH-D-M | 2025-07-02 | minor updates
+209d4f9 | SATHEESH-D-M | 2025-07-02 | input output png files
+84c2637 | SATHEESH-D-M | 2025-07-02 | working pipeline - initial commit
+a04151a | SATHEESH-D-M | 2025-07-02 | outputs from pipeline
+660467f | SATHEESH-D-M | 2025-07-01 | uploaded exercise question pdf
+ce995ca | SATHEESH-D-M | 2025-07-01 | uploaded i/o images
+6d29dbf | SATHEESH-D-M | 2025-07-01 | Initial working ipynb script
+840ab7d | SATHEESH-D-M | 2025-07-01 | Initial commit
